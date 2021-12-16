@@ -30,7 +30,7 @@
         <?php echo strlen($text) ?> caratteri
     </p>
     <h1>
-        Testo: 
+        Testo Censurato: 
     </h1>
     <p>
         <?php echo $textCensur ?>
