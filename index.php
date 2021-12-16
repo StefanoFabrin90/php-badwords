@@ -14,6 +14,7 @@
     $text = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nihil necessitatibus aut doloribus aliquam totam laborum. Porro vel, minus molestiae qui officiis, quis aspernatur sint quos tenetur recusandae enim tempore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, repudiandae minus rem quas qui itaque? Nam veritatis nisi, ea libero omnis iure excepturi neque, modi tenetur asperiores odit corrupti quia!
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloribus placeat dolores, nam, eveniet voluptatum facilis assumenda consectetur culpa inventore eligendi ab voluptates laboriosam voluptas vel in illo vitae impedit!';
 
+    $textCensur = str_replace("Lorem", "***", $text);
     ?>
 
     <h1>
@@ -32,7 +33,13 @@
         Testo: 
     </h1>
     <p>
-        <?php echo str_replace("Lorem", "***", $text) ?>
+        <?php echo $textCensur ?>
+    </p>
+    <h1>
+        Lunghezza:
+    </h1>
+    <p>
+        <?php echo strlen($textCensur) ?> caratteri
     </p>
 
 </body>
